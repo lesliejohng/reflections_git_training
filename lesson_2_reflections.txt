@@ -1,0 +1,13 @@
+git init
+git status
+
+What happens when you use the command git init?
+git sets up the hidden files under a sub-directory .git
+This allows git to recognise the directory as containing git information and sets up the logging and history required by git.
+
+git add //adds to 'staging area'
+git commit //commits files in the 'ataging area'
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+The staging area consists only of files seected from the working directory,so gives control over which to commit.
+

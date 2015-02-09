@@ -1,0 +1,35 @@
+How did viewing a diff between two versions of a file help you see a bug that was introduced?
+The diffference between a working version and a subsequent one which was bugged could be for many reasons. A good starting point seems to be to check changes to which of these causes the problem.
+In the example given the fault was a simple typo which was easy to spot from the change list. Clearly faults could be more subtle and it it clearly necessary to pre-test any major additions to the program to ensure they achieve the desired results.
+A good code editor also provides facilities, such as the high-lighting of commands and variables known to the program, which should minimise the introduction of typo-based errors.
+
+How could having asy access to the entire history of a file make you a more efficient programmer in the long term?
+There are two obvious ways that this would be: firstly is the quick identification of bugs after a change but secondly there is the ability to learn from the developmental process itself and thereby improve effectively.
+
+Commit= versioning in Git
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+When writing code the file saving needs to be at logical point. I think that only the programmer can choose where these are and that the discipline of doing so is good practice when thinking of changing code.
+
+Git Repository= group of files required in a project
+
+Why do your think some version control sysytems, like Git, allow saving multiple files in one commit, while others, like google docs, treat all files separately?
+The key differences are the purposes of the vcs and whether the saving process is automated. In programming a number of files interact, especially in bigger projects. This both requires that snapshots of all of the files are taken simultaniously and would an automated, rather than user-driven, process less likely to save at the rught time.
+
+git diff (ID) (ID)
+uses 'less' for display
+less escape = 'q'
+
+How can you use the commands git log and git diff to view the history of files?
+The process in the lesson is a useful introduction, but the help page on log installed with git shows the commands to have a range of switches. The most potentially useful seem to be:-
+On diff the --stat and --numstat would avoid number counting of changes and could identify major and minor modifications.
+On log --before=<date> and --after=<date> could improve search, as could --author<text>.
+One question I have is wether the comparison needs to be of concurrent files. There seems to be no reason for this to be so, although using concurrent files would simplify the identification of errors. TESTED you can pick up non concurrent files if you wish.
+Another thought: in order to improve control of a project could it be a good idea to have a version numbering system which would be reflected in the Commit Message. I suppose this would only be helpful if the commit meassage could be searched in log--- This command works:-
+git log --grep=Revert*
+
+How might version control make you more confident to make changes that could break something?
+The ability to trace errors, especially the checkout function is useful.Whilst not removing the need to build in checking processes at programming time the extra checking facility is a useful addition to built-in error checking procedures. I think it would make me more confident especially in the case of major changes in particular providd these were constructed in small logical steps and commits tied to this action plan.
+
+How do you want to use Git?
+I have lost many hours and much work with a 'manual snapshot system' and want to use Git to ensure that future deructive changes on my project are minimised. To achieve this thinking in advance of the commit stages will need to become a habit.
