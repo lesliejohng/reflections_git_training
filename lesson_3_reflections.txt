@@ -8,3 +8,9 @@ I added this note on github
 
 When would you want to use a remote repository rather than keeping all your work local?
 Keeping work remotely is a good security process. (I am speaking from experience of hardware failure!) It allows sharing of information on an easy basis and access to the files on multiple machines.
+
+git pull origin master
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+The manual control allows you to manage changes and I can see how this would help especially in co-operative projects, I am not certain however how git manages multiple changes to the same branch as this could introduce a similar problem as seen in the merge cpmmand.
+
