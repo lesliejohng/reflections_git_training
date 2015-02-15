@@ -3,3 +3,5 @@ git remote //status
 git remote add [git hub repository name] [url]
 git remote -v  //verbose status
 git remote push [git hub repository name] [branch to be pushed]
+
+I added this note on github
