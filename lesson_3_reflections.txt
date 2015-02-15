@@ -22,3 +22,11 @@ To clone a repository provides you with a similar copy, although this is establi
 Branches are similar to both in that they provide a way to establish multiple versions of your code. These are kept locally until you decide to push particular branches to a github repository. A branches that you do not wish to publish can be kept locally therby limiting access.
 The key point about use, in my view, is the degree of access and co-operation required. Local branches can be kept to yourself and those with local access. Forks and clones are co-operative method allowing access to work without disturbing the initial code.
 
+git pull origin master
+(equivalent to git fetch origin master THEN git merge master origin/master)
+
+Fast Forward Merges
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+This information allows confirmation of whether the local is ahead of the repository to be shown in git status. If offline it allows some information to be shown and is a good reminder of the need to push information to github.
+
