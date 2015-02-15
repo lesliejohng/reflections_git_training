@@ -30,3 +30,6 @@ Fast Forward Merges
 What is the benefit of having a copy of the last known state of the remote stored locally?
 This information allows confirmation of whether the local is ahead of the repository to be shown in git status. If offline it allows some information to be shown and is a good reminder of the need to push information to github.
 
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+There are many methods on collaboration, An obviuos one would to keep separate working and development copies of your code and to make the development version available to the collaborators. This could be achieved in many ways, git hub could be viewed as restrictive. Any requirement for tracking of changes, investigating differences or nerging of multiple versions would need to be manually managed and would, therefore, add substantial overheads to the process.
+
