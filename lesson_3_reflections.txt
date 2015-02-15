@@ -33,3 +33,6 @@ This information allows confirmation of whether the local is ahead of the reposi
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 There are many methods on collaboration, An obviuos one would to keep separate working and development copies of your code and to make the development version available to the collaborators. This could be achieved in many ways, git hub could be viewed as restrictive. Any requirement for tracking of changes, investigating differences or nerging of multiple versions would need to be manually managed and would, therefore, add substantial overheads to the process.
 
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+Amending the master is the clearest way to make changes. Creating branches increases the complexity of the project map, but would be useful for experimental changes or changes where you would like the input of others or user testing before making a chnge to the stable version of the program.
+
