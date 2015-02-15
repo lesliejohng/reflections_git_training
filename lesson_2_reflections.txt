@@ -1,13 +1,55 @@
 git init
-git status
+git status //check for items in staging area
 
 What happens when you use the command git init?
 git sets up the hidden files under a sub-directory .git
 This allows git to recognise the directory as containing git information and sets up the logging and history required by git.
 
 git add //adds to 'staging area'
-git commit //commits files in the 'ataging area'
+git commit //commits files in the 'staging area'
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 The staging area consists only of files seected from the working directory,so gives control over which to commit.
 
+git diff //compare staged files to those in the working folder
+
+How can you use the staging area to make sure you have one commit per logical change?
+Suggested prodess:-
+     git status regularly to check for changed files
+     git add to add to staging area
+     git diff to check working directory against staging area
+     (if logically connected files in staging area)
+     git commit
+
+git diff --staged /compares staging area to repository
+git reset --hard / discards changes in staging area and working directory ** not reversabe CARE!
+
+Branches: Master(auto created) can branch and set branch names. 
+last coomit on branch= 'tip of branch'
+branches can be susequently merged
+
+git branch /shows current branches
+git branch easy-mode /sets up branch named 'easy-mode'
+'*' shows which branch is checked out
+git checkout easy-mode
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+The examples given in this training incleded those which were experimental. I would like to view this from the opposite direction: branching is where you wish to leave the master code unaltered but still wish to make changes. (I perviously considered version numbers as a possible addition to the commit message. Whilst this may still be a good control method the ability to have multiple versions makes the versioning system harder!)
+
+"remote branch" = created by someone else
+git log --graph master coins
+git checkout -b new_branch_name //in detatched head
+
+How do the diagrams help you visualize the branch structure?
+diagrams are a useful tool enabling a problem to be seen in a different way. In this case the diagram was a good demonstation of braches, their structure and the accessibility of commits.
+
+git checkout master
+git branch
+git show i/d /shows diff from parent
+git merge master coins
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Result is to combine changes through a comparison of each branch tip with the coomit at the point of divergence. I my case the automatic merge found some changes which were impossible to merge on this information. A manula look at the resulting (but uncommited) file enabled me to choose which changes to retain and which to delete. The diagran brings the coomit together as this effectively shows that both of the commit histories are retained.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+The automatic system seems to save time and would correctly identify changes and conflicts in most cases. Clearly testing of both branches prior to the merge is important as the system used would happily merge a bugged line into the original if there was no conflicting change in the other. I think the time saving is worth this risk, but recognise that the risk must be managed.
