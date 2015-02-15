@@ -5,3 +5,6 @@ git remote -v  //verbose status
 git remote push [git hub repository name] [branch to be pushed]
 
 I added this note on github
+
+When would you want to use a remote repository rather than keeping all your work local?
+Keeping work remotely is a good security process. (I am speaking from experience of hardware failure!) It allows sharing of information on an easy basis and access to the files on multiple machines.
