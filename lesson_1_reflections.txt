@@ -3,7 +3,7 @@ The diffference between a working version and a subsequent one which was bugged 
 In the example given the fault was a simple typo which was easy to spot from the change list. Clearly faults could be more subtle and it it clearly necessary to pre-test any major additions to the program to ensure they achieve the desired results.
 A good code editor also provides facilities, such as the high-lighting of commands and variables known to the program, which should minimise the introduction of typo-based errors.
 
-How could having asy access to the entire history of a file make you a more efficient programmer in the long term?
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
 There are two obvious ways that this would be: firstly is the quick identification of bugs after a change but secondly there is the ability to learn from the developmental process itself and thereby improve effectively.
 
 Commit= versioning in Git
